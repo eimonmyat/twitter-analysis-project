@@ -21,11 +21,11 @@ public class SearchTweet {
         BufferedReader br = new BufferedReader(
                                     new InputStreamReader(
                                     url.openConnection().getInputStream()));
-        int c;
+        /*int c;
         while((c=br.read())!=-1)
         {
             bu.append((char)c);
-        }
+        }*/
         br.close();
         JSONObject js = new JSONObject(buff.toString());
         JSONArray tweets = js.getJSONArray("results");
